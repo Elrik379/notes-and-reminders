@@ -8,6 +8,7 @@ import java.util.ArrayList;
 
 public class LoadNote implements Serializable {
 
+    @SuppressWarnings("unchecked")
     public static void loadNote() {
         try (FileInputStream fileInput = new FileInputStream("D:\\2.txt");
              ObjectInputStream objectInput = new ObjectInputStream(fileInput)) {
